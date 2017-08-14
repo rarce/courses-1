@@ -22,3 +22,15 @@ Once you have an Azure GPU server set up, download and run the `install-gpu-azur
 
 ### Ubuntu
 Download and run the `install-gpu.sh` script to install required software on an Ubuntu machine. More instructions available on the [wiki](http://wiki.fast.ai/index.php/Ubuntu_installation).
+
+### Floydhub
+1. [Create a FloydHub account](https://www.floydhub.com/login)
+2. Install floyd-cli on your computer `pip install -U floyd-cli`
+3. [Log in to FloydHub](http://docs.floydhub.com/guides/basics/login/) through floyd-cli `floyd login`
+4. Clone this repo `git clone git@github.com:rarce/courses-fastai.git`
+5. Initialize floyd proyect
+```
+cd course-fastai
+floyd init course-fastai
+floyd run --mode jupyter --gpu --env theano-0.8:py2 --data rarce/datasets/dogs-vs-cats-redux-kernels-edition/2:dogsvscats
+```
