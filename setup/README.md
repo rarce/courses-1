@@ -30,7 +30,7 @@ Download and run the `install-gpu.sh` script to install required software on an 
 4. Clone this repo `git clone git@github.com:rarce/courses-fastai.git`
 5. Initialize floyd proyect
 ```
-cd course-fastai
-floyd init course-fastai
-floyd run --mode jupyter --gpu --env theano-0.8:py2 --data rarce/datasets/dogs-vs-cats-redux-kernels-edition/2:dogsvscats
+cd courses-fastai
+floyd init courses-fastai
+floyd run --mode jupyter --gpu --env theano-0.8:py2 --data rarce/datasets/dogsvscats/1:dogsvscats
 ```
